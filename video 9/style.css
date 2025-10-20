@@ -1,9 +1,19 @@
 .red {
-  color: red;
+  color: yellow;
 }
+
 .bg-yellow {
   background-color: yellow;
 }
+
 #firstdiv {
-  /* background-color: red; */
+  background-color: red; /* Rule is now active (uncommented) */
+}
+
+#seconddiv {
+  background-color: black;
+}
+
+#seconddiv {
+  color: green;
 }
