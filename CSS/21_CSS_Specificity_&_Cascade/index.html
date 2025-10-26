@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* 
+    !important: 10000
+Inline styles: 1000 
+ID selectors: 100
+Class selectors,   attribute selectors, and pseudo-classes: 10
+Element selectors and pseudo-elements: 1
+Universal Selector: 0
+
+*/
+    /* the specificity of this selector is 1 */
+    h1 {
+      color: aqua;
+    }
+
+    /* the specificity of this selector is 10 */
+    .cpurple {
+      color: purple;
+    }
+
+    /* the specificity of this selector is 1+10=11 */
+    h1.yellow {
+      color: yellow;
+    }
+
+    /* this is an example of attribute selector , its specificity is same as class that is 10 */
+    [ww="willywonka"] {
+      color: maroon;
+    }
+
+    /* the specificity of this selector is 10 */
+    .cred {
+      color: red;
+    }
+
+    h1.rohan-class {
+      color: green;
+    }
+
+    /* its specificity = 1 + 10 + 10 + 10 + 10 = 41
+     a.harryclass.rohan-class[href]:hover {
+      color: red;
+    } */
+
+    /* attribute is inside [] , thats why href is an attribute  */
+  </style>
+  <body>
+    <div>
+      <h1 class="yellow cred cpruple rohan-class" data-x="a">
+        CSS Specificity
+      </h1>
+      <h2 ww="willywonka">yeah mister white</h2>
+      <h2 ww="walterwhite">He cant keep getting away with this</h2>
+    </div>
+  </body>
+</html>
