@@ -16,6 +16,7 @@
       .parent {
         border: 1px solid rgb(204, 225, 255);
         margin: 15px 33px;
+
         /* padding: 5px; */
         border-radius: 10px;
         box-sizing: border-box;
@@ -43,9 +44,8 @@
       .navbuttons li {
         list-style: none;
         background-color: white;
-        padding: 5px;
-        border: 1px solid rgb(176, 173, 173);
-        border-radius: 15px;
+        padding: px;
+
         font-family: quicksand;
         color: rgb(151, 147, 147);
         font-size: 12px;
@@ -55,7 +55,7 @@
         display: flex;
         background-color: white;
         padding: 10px;
-        margin: 5px;
+        padding-left: 12px;
       }
       .navbuttons span {
         background-color: white;
@@ -81,6 +81,42 @@
       .navigation {
         background-color: white;
       }
+      .readmore p {
+        font-family: quicksand;
+        text-align: center;
+        padding: 5px;
+        font-size: 10px;
+        font-weight: 700;
+        background-color: white;
+        margin-bottom: 15px;
+        color: rgb(29, 153, 231);
+      }
+      .readmore span {
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: white;
+        border: 0px solid rgb(159, 212, 233);
+        background-color: rgb(214, 236, 241);
+        border-radius: 15px;
+      }
+      .li {
+        border: 2px solid rgb(151, 147, 147);
+        padding: 5px;
+        border-radius: 15px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+      .navlink {
+        text-decoration: none;
+        color: inherit;
+        background-color: white;
+      }
+      .readlink {
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+      }
     </style>
   </head>
   <body>
@@ -94,8 +130,20 @@
       <div class="navbuttons">
         <nav class="navigation">
           <ul>
-            <span><li class="item1">Nature</li></span>
-            <span><li class="item2">Lake</li></span>
+            <li class="item1">
+              <span class="li"
+                ><a href="https://www.nature.com/" class="navlink"
+                  >Nature</a
+                ></span
+              >
+            </li>
+            <li class="item2">
+              <span class="li"
+                ><a href="https://www.nature.com/" class="navlink"
+                  >Lakes</a
+                ></span
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -104,7 +152,19 @@
         Lorem ipsum dolor sit ametiufore consectetur adipisicing elit.
         Voluptatibus amet neque, blanditiis distinctio vel, sit.
       </div>
-      <div class="readmore"></div>
+      <div class="readmore">
+        <div>
+          <p>
+            <span
+              ><a
+                href="https://en.wikipedia.org/wiki/Pragser_Wildsee"
+                class="readlink"
+                >Read More</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
