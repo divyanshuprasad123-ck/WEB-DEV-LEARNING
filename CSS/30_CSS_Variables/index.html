@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css variables</title>
+    <style>
+      :root {
+        --color: rgb(201, 24, 210);
+        --seccolor: rgb(225, 147, 221);
+        --defpad: 23px;
+        --defop: 0.4;
+        /* default padding */
+        /* interview - css variables dont hold only color but values , background, urls, strings, numbers,
+        if you need to change same thing at multiple points then it is widely used for that   */
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        background-color: var(--color);
+      }
+
+      ul {
+        display: flex;
+      }
+      ul li {
+        opacity: var(--defop);
+        list-style: none;
+        padding: 34px;
+        border: 2px solid var(--seccolor);
+        padding: var(--defpad);
+      }
+      ul li:first-child {
+        --color: rgb(245, 145, 14);
+        background-color: var(--color, blue);
+      }
+      .container {
+        background-color: var(--seccolor);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+      quisquam quibusdam recusandae! Deserunt numquam exercitationem dolore
+      facilis suscipit. Laborum est, inventore quis nostrum cumque pariatur,
+      harum voluptates tempora aut, modi iure exercitationem unde aperiam eos
+      minus ipsum consequatur sapiente sunt illum. Facilis dolorum unde maxime.
+    </div>
+  </body>
+</html>
