@@ -1,0 +1,170 @@
+<!-- card.png is a file which contains a card Image. Write html and css code to design this card. Use #html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARD</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(220, 220, 220);
+      }
+      .parent {
+        border: 1px solid rgb(204, 225, 255);
+        margin: 15px 33px;
+
+        /* padding: 5px; */
+        border-radius: 10px;
+        box-sizing: border-box;
+        background-color: rgb(255, 255, 255);
+      }
+      .image {
+        /* border: 1px solid white; i think no use here */
+        border-radius: 10px;
+        margin: 7px;
+        box-sizing: border-box;
+      }
+
+      /* 🎯help -  YEH NAYA RULE ADD KARNA HAI 🎯 */
+      .image img {
+        /* Sirf img tag ko target karo */
+        width: 100%; /* Image ki width ko parent ke 100% par set kiya */
+        height: auto; /* Height automatically adjust ho jayegi taaki image phate nahi */
+        display: block; /* Taki margin/padding theek se kaam kare */
+        border-radius: 10px; /* Corner radius lagao */
+      }
+      .navbuttons {
+        /* margin: 20px; */
+        margin-left: 1px;
+      }
+      .navbuttons li {
+        list-style: none;
+        background-color: white;
+        padding: px;
+
+        font-family: quicksand;
+        color: rgb(151, 147, 147);
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .navbuttons ul {
+        display: flex;
+        background-color: white;
+        padding: 10px;
+        padding-left: 12px;
+      }
+      .navbuttons span {
+        background-color: white;
+        margin: 5px;
+      }
+      .main {
+        font-family: "quicksand", sans-serif;
+        font-weight: 620; /* Ya 700 weight try karo */
+        font-size: 23px;
+        color: #1a334d; /* Yeh dark blue/slate color bhi use kar sakte ho */
+        margin-left: 18px;
+        background-color: white;
+      }
+      .lorem {
+        font-family: quicksand;
+        margin: 18px;
+        margin-top: 20px;
+        background-color: white;
+        font-size: 15px;
+        color: rgb(151, 147, 147);
+        font-weight: 600;
+      }
+      .navigation {
+        background-color: white;
+      }
+      .readmore p {
+        font-family: quicksand;
+        text-align: center;
+        padding: 5px;
+        font-size: 10px;
+        font-weight: 700;
+        background-color: white;
+        margin-bottom: 15px;
+        color: rgb(29, 153, 231);
+      }
+      .readmore span {
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: white;
+        border: 0px solid rgb(159, 212, 233);
+        background-color: rgb(214, 236, 241);
+        border-radius: 15px;
+      }
+      .li {
+        border: 2px solid rgb(151, 147, 147);
+        padding: 5px;
+        border-radius: 15px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+      .navlink {
+        text-decoration: none;
+        color: inherit;
+        background-color: white;
+      }
+      .readlink {
+        text-decoration: none;
+        color: inherit;
+        background-color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="image">
+        <img
+          src="patrick-fore-UFqV-RqPm8w-unsplash.jpg"
+          alt="a boat in the mountains"
+        />
+      </div>
+      <div class="navbuttons">
+        <nav class="navigation">
+          <ul>
+            <li class="item1">
+              <span class="li"
+                ><a href="https://www.nature.com/" class="navlink"
+                  >Nature</a
+                ></span
+              >
+            </li>
+            <li class="item2">
+              <span class="li"
+                ><a href="https://www.nature.com/" class="navlink"
+                  >Lakes</a
+                ></span
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">Lago di Braies</div>
+      <div class="lorem">
+        Lorem ipsum dolor sit ametiufore consectetur adipisicing elit.
+        Voluptatibus amet neque, blanditiis distinctio vel, sit.
+      </div>
+      <div class="readmore">
+        <div>
+          <p>
+            <span
+              ><a
+                href="https://en.wikipedia.org/wiki/Pragser_Wildsee"
+                class="readlink"
+                >Read More</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
