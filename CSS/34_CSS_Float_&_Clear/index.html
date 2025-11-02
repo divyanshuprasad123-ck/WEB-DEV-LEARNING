@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Float and clear</title>
+    <!-- clearly avoid using float and clear both lol -->
+    <style>
+      img {
+        float: left;
+      }
+      .cards {
+        border: 2px solid black;
+        display: flow-root;
+        /* display flow root makes the overflowed elements adjust in the parent container */
+      }
+      .card {
+        border: 2px solid red;
+      }
+
+      .card:nth-child(3) {
+        background-color: aqua;
+        /* clear: left; */
+        /* clear: right; */
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <img
+        src="https://images.unsplash.com/photo-1506138979136-a74b54936c90?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFuJTIwb24lMjBib2F0fGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=700"
+        alt="man on a boat on an evening"
+        width="230px
+        "
+      />
+      <div class="card">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi est,
+        accusantium recusandae dolores, quas rerum optio vitae quis similique
+        sequi nisi et veniam facilis. Mollitia veniam quis sunt omnis porro,
+        nihil dolorem velit. Reprehenderit?
+      </div>
+      <div class="card">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
+        voluptatem veniam facere facilis ea culpa eius optio at fugiat dolores
+        velit, aspernatur rerum placeat, fuga qui aliquam beatae non autem
+        excepturi delectus maiores? Sint repudiandae asperiores quo beatae
+        veritatis laboriosam perspiciatis dicta iusto dignissimos id quos,
+        sapiente repellendus nam, quas culpa vero natus, eligendi voluptatum.
+        Officia eligendi harum labore fugiat numquam temporibus eum quo,
+        blanditiis vero, iste assumenda quis, voluptatem ut. Provident sit totam
+        eaque sapiente, veniam aspernatur iste accusantium, quam incidunt nisi
+        laudantium aperiam voluptatem aliquam quaerat quibusdam, minus beatae
+        quod consequatur blanditiis placeat? Possimus, quo nobis libero ipsam
+        totam est incidunt, aperiam magnam iusto laborum unde magni? Eius
+        corporis quae omnis dolore ullam earum rerum vero tempora ex magni
+        repudiandae animi, aut qui aliquam cupiditate nostrum sint, dignissimos
+        itaque nemo veritatis excepturi est beatae esse. Minus amet pariatur
+        ducimus odio corrupti officiis sit voluptate ab a iste, quasi
+        perferendis culpa vitae ad, commodi, ipsa beatae. Ex voluptatum eaque
+        doloremque corporis tempore recusandae omnis ipsum id sapiente sequi
+        voluptates pariatur, tempora illo! Laudantium odio impedit tempore
+        suscipit quisquam voluptates eius eos tempora neque modi illo sunt, quae
+        aliquam adipisci, consequatur saepe nisi quis assumenda, autem
+        laboriosam vero. Ullam corrupti enim temporibus eligendi iusto
+        consectetur adipisci ratione nisi illo cum aperiam facere molestias,
+        illum recusandae vero qui numquam provident a sapiente facilis
+        exercitationem perspiciatis asperiores veniam quisquam? Nesciunt nostrum
+        adipisci aliquid recusandae, totam, delectus quae architecto pariatur
+        ipsa qui sint animi molestias veritatis nihil laborum tempore, assumenda
+        eum cum numquam? Quam repudiandae id itaque voluptates, velit, mollitia
+        omnis ipsum aperiam distinctio soluta alias quas ipsam? Praesentium sed
+        dignissimos quas dolor corporis earum asperiores iure aut animi,
+        consequatur ad sapiente vel excepturi sequi quis libero aliquid error a,
+        molestias nobis est. Incidunt magni, vitae, cumque asperiores eaque,
+        optio deserunt minima soluta fugit facere illum laborum illo dolorem
+        quis. Autem provident dolore veniam atque ad soluta eius quas maiores
+        facere enim? Minima, libero laudantium sequi quo aperiam, a quos natus,
+        inventore sapiente sed explicabo veritatis?
+      </div>
+      <div class="card">Card 3</div>
+    </div>
+  </body>
+</html>
