@@ -1,11 +1,116 @@
+<!-- Create a multicolor navbar which can change color using CSS Variables -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>EX - MULTI COLOR NAVBAR</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: var(--color-body);
+      }
+      :root {
+        --color-ulbg: rgb(238, 209, 150);
+        --color-1: rgb(238, 129, 129);
+        --color-2: rgb(131, 131, 218);
+        --color-3: rgb(135, 237, 135);
+        --color-body: rgb(103, 228, 235);
+      }
+      ul {
+        display: flex;
+        /* justify-content: space-between; */
+        /* justify-content: space-around */
+        /* justify-content: center */
+        /* align-items: center; 
+        always set height while using align items center*/
+        gap: 20px;
+
+        background-color: var(--color-ulbg);
+        margin: 10px;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 10px;
+      }
+      ul li {
+        list-style: none;
+        padding: 15px;
+        border-radius: 15px;
+        font-weight: bold;
+      }
+      li:first-child {
+        background-color: var(--color-1);
+        margin-right: 10px;
+      }
+      li:nth-child(2) {
+        background-color: var(--color-2);
+        margin-right: 10px;
+      }
+      li:nth-child(3) {
+        background-color: var(--color-3);
+      }
+      .container {
+        margin: 10px;
+      }
+      section {
+        margin: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    Create a multicolor navbar which can change color using CSS Variables
+    <div class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <section id="home">
+        <h2 class="home">Home</h2>
+        <p>
+          A home, or domicile, is a space used as a permanent or semi-permanent
+          residence for one or more human occupants, and sometimes various
+          companion animals. Homes provide sheltered spaces, for instance rooms,
+          where domestic activity can be performed such as sleeping, preparing
+          food, eating and hygiene as well as providing spaces for work and
+          leisure such as remote working, studying and playing.
+        </p>
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          "About" can be a preposition or adverb meaning "concerning,"
+          "approximately," or "on the verge of". It can also indicate proximity
+          in space or time, or a sense of being busy or engaged. The meaning of
+          "about" depends heavily on its context within a sentence.
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Contact is a 1985 hard science fiction novel by American scientist
+          Carl Sagan. The plot of the novel concerns contact between humanity
+          and a more technologically advanced extraterrestrial life form. It
+          ranked No. 7 on Publishers Weekly's 1985 bestseller list. The only
+          full work of fiction published by Sagan, the novel originated as a
+          screenplay by Sagan and Ann Druyan (whom he later married) in 1979;
+          when development of the film stalled, Sagan decided to convert the
+          stalled film into a novel. The film concept was subsequently revived
+          and eventually released in 1997 as the film Contact starring Jodie
+          Foster.
+        </p>
+      </section>
+    </div>
   </body>
 </html>
